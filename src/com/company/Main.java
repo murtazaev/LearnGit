@@ -1,10 +1,20 @@
 package com.company;
 
+import java.util.HashMap;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.print("Код для проверки слияния");
-        System.out.print("Код для удаленной вторичной ветки");
-        System.out.print("Повторение");
+        Box o = new Box(1,2,3);
+        Box p = new Box(1,2,3);
+        Integer code = o.hashCode();
+        System.out.println(code);
+        Integer code2 = p.hashCode();
+        System.out.println(code2);
+        System.out.println(o.equals(p));
+
+
+
+
     }
 }
